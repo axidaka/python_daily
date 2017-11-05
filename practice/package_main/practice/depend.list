@@ -1,0 +1,10 @@
+# 请查询 http:==repo.yypm.com=dwintegrate 下各个子目录里面的version.info
+# 版本号等于releaseversion字段的值
+
+[dw3rd]
+wtl-80=2011.80.0.20
+curl-7.28.1=2014.7281.1.274
+openssl-1.0.0d=2011.100d.1.25
+zlib-1.2.7=2014.127.1.261
+sqlite-3.8.5=2015.385.1.365
+tinyxml-2.5.2=2013.252.1.153

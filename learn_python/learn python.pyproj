@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77aadeb0-8a0b-4430-b9e9-98f8e6f60678}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>practice\CollectPdb.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="poem.txt" />
+    <Content Include="PythonCookbook\chapter1_string\stringProcess.pyc" />
+    <Content Include="PythonCookbook\chapter1_string\__init__.pyc" />
+    <Content Include="PythonCookbook\chapter2_file\fileprocess.pyc" />
+    <Content Include="PythonCookbook\chapter2_file\__init__.pyc" />
+    <Content Include="PythonCookbook\chapter4_PythonSkill\pythonskill.pyc" />
+    <Content Include="PythonCookbook\chapter4_PythonSkill\__init__.pyc" />
+    <Content Include="_newfile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="auto_test\__init__.py" />
+    <Compile Include="class-static-method.py" />
+    <Compile Include="crawl.py" />
+    <Compile Include="datastruct.py" />
+    <Compile Include="dictAndset.py" />
+    <Compile Include="except.py" />
+    <Compile Include="file.py" />
+    <Compile Include="fileAndinoutput.py" />
+    <Compile Include="firstBackUp.py" />
+    <Compile Include="generate.py" />
+    <Compile Include="InheritClass.py" />
+    <Compile Include="iterable.py" />
+    <Compile Include="learnClass.py" />
+    <Compile Include="logging-learn.py" />
+    <Compile Include="module.py" />
+    <Compile Include="multithread.py" />
+    <Compile Include="practice\DnfboxFileZip.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="practice\__init__.py" />
+    <Compile Include="PythonCookbook\chapter1_string\stringProcess.py" />
+    <Compile Include="PythonCookbook\chapter1_string\__init__.py" />
+    <Compile Include="PythonCookbook\chapter2_file\fileprocess.py" />
+    <Compile Include="PythonCookbook\chapter2_file\__init__.py" />
+    <Compile Include="PythonCookbook\chapter4_PythonSkill\pythonskill.py" />
+    <Compile Include="PythonCookbook\chapter4_PythonSkill\__init__.py" />
+    <Compile Include="PythonCookbook\fileprocess.py" />
+    <Compile Include="PythonCookbook\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runpython.py" />
+    <Compile Include="test_function.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="secondBackup.py" />
+    <Compile Include="test.py" />
+    <Compile Include="thirdBackup.py" />
+    <Compile Include="unicode.py" />
+    <Compile Include="practice\CollectPdb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="practice\deleteRepeatPng.py" />
+    <Compile Include="practice\Practice.py" />
+    <Compile Include="practice\SpiderPicOnline.py" />
+    <Compile Include="auto_test\runTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="auto_test\" />
+    <Folder Include="PythonCookbook\" />
+    <Folder Include="practice\" />
+    <Folder Include="PythonCookbook\chapter1_string\" />
+    <Folder Include="PythonCookbook\chapter2_file\" />
+    <Folder Include="PythonCookbook\chapter4_PythonSkill\" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
