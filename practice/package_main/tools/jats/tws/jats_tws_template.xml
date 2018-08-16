@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JATS_TWS_Template> 
+<!-- 用于创建tws jat目录 -->
+        <conf>
+            <Domain>ap.wq.jd.com</Domain> <!-- 域名 如pcbaby.wq.jd.com-->
+            <Url_Pattern>\/ap\/*</Url_Pattern> <!-- URP正则匹配 如pcbaby/*， 如果包含/，请加\-->
+            <Rpm_Package>web_service_actpro</Rpm_Package><!-- RPM包名，如web_service_pcbaby -->
+            <Tws_Service_Name>actpro_tws</Tws_Service_Name><!-- TWS 服务名，用于webcontainer启动，如pcbaby_tws -->
+            <Tws_So>actproservice.so</Tws_So><!-- so名， 如pcbabyservice.so -->
+            <LogDir_Name>actpro</LogDir_Name><!-- 日志目录，如pcbaby -->
+            <Connector_Queue_Key>201804121</Connector_Queue_Key> <!-- 与webserver通信消息队列Key，一般取当前日期，如2017091101 -->
+            <Timeout_Report_Key>wq.promote.activeproduct.ap.tws.time_out</Timeout_Report_Key><!-- 超时上报Key，如wq.promote.activeproduct.pcbaby.tws.time_out -->
+        </conf>
+</JATS_TWS_Template> 

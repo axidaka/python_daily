@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LogConfig>
+    <Log_module_conf module_name="webcontainer" filter_log_type="LOG_TYPE_RUN"
+		appender="RollingFileAppender" local_log_path="../log/" 
+		max_file_size="100000000" max_rolling_file="10" 
+		remote_queue_id="201601130" />
+    <Log_module_conf module_name="default_svc" filter_log_type="LOG_TYPE_RUN"
+                appender="RollingFileAppender" local_log_path="../log/"
+                max_file_size="100000000" max_rolling_file="10"
+                remote_queue_id="201601130" />
+</LogConfig>

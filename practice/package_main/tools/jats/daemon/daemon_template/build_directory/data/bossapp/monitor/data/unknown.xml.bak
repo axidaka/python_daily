@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GBK"?>
+<root>
+	<dir path="/data/bossapp/unknown_rpm/bin">
+		<proc name="unknown_proc"  min="unknown_num" max="unknown_num" start="./unknown_proc"/>
+	</dir>
+</root>

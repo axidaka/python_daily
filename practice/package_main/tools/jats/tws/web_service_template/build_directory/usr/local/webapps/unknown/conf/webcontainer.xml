@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<!-- 
+    @brief Web容器(Web Container)配置文件
+           可配置容器中连接器 Connector、容器引擎 Engine、扩展功能模块 Module等信息
+    @version web container 0.1
+    @author Binqiang Huang(yota)
+-->
+<WebContainer>
+    <!-- 
+        容器服务的配置信息
+    -->
+    <Server register_board_key="200806040" file_lock_path="./webcontainer.lock" start_worker="20" min_spare_worker="20" max_spare_worker="20" max_worker="20" perform_timer_interval="60" perform_log_remote="1" req_timeout_ms="1000"  req_timeout_cnt_report="20" req_timeout_report_key="unknown_report_key" />
+    <!-- 
+        连接器(Connector)的配置信息
+    -->
+    <Connectors>
+        <!-- 定义一个与前端轻量级web server通信的连接器，并指定各队列标识 -->
+        <Connector name="httpd_connector" webserver_queue_key="200703231" cachemgr_queue_key="200703232" connector_queue_key="unknown_queue_key"/>
+
+    </Connectors>
+    <!-- 
+        容器引擎(Engine)的配置信息
+    -->
+    <Engine quit_when_run_time="0" />
+    <!-- 
+        加载进容器中模块(Module)的配置信息
+    -->
+    <Modules>
+        <Module name="access_control" module_path="/usr/local/webcontainer/module/mod_access_control.so" config_file="../conf/module/mod_access_control.xml" enable="true" />
+        <Module name="gzip" module_path="/usr/local/webcontainer/module/mod_gzip.so" config_file="../conf/module/mod_gzip.xml" enable="true" />
+    </Modules>
+    <!-- 
+        出错码对应文档(ErrorDocuments)的配置，支持出错信息的定制显示
+    -->
+    <ErrorDocuments>
+        <Item err_code="400" path="/usr/local/webcontainer/errordoc/err400.html" />
+        <Item err_code="404" path="/usr/local/webcontainer/errordoc/err404.html" />
+        <Item err_code="403" path="/usr/local/webcontainer/errordoc/err403.html" />
+        <Item err_code="408" path="/usr/local/webcontainer/errordoc/err408.html" />
+        <Item err_code="500" path="/usr/local/webcontainer/errordoc/err500.html" />
+    </ErrorDocuments>
+</WebContainer>
+

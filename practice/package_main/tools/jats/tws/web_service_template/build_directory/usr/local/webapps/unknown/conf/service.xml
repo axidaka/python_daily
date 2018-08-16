@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<!-- 
+    @brief 业务配置文件
+           包括虚拟主机及相应的服务器端程序(Service)配置信息
+    @version Web Service Specification 0.1
+    @author Binqiang Huang(yota)
+-->
+<Services>
+    <!--
+        虚拟主机(Vhost)配置信息
+        name:                        虚拟主机名；
+        base_dir:                    根目录；
+
+        加载业务(Service)配置信息
+        url_pattern:                 业务的url匹配模式；
+        path:                        加载的业务模块所在路径；
+        use_webcache:                是否使用Web Cache进行访问加速；
+        webcache_expire_time:        在Web Cache中的缓存过期时间；
+        browser_expire_time:         在浏览器缓存中的过期时间；
+    -->
+    <Vhost name="unknown.com" base_dir="/usr/local/webapps/unknown_rpm_package" >
+        <Service url_pattern="unknown_url_pattern" path="../service/unknown.so" use_webcache="false" webcache_expire_time="60" browser_expire_time="30" />
+    </Vhost>
+</Services>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gbk"?>
+<webserver>
+        <Vhosts>
+                <Vhost vhost_name="unknown.com" process_queue_id="unknown_queue_key" qos_strategy_id="1"
+                use_web_cache="false" record_run_log="false" check_refer="false" refer_match=""
+                monitor_report="true" connect_num_id="671051" cache_hit_id="671050"
+                sys_proc_slow_num_id="671052" backend_proc_slow_num_id="671053" rewrite_rule_id="" />
+        </Vhosts>
+</webserver> 
