@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JATS_TWS_Template> 
+<!-- 用于创建tws jat目录 -->
+        <conf>
+            <Rpm_Package>ao_shopgroup_label_follow</Rpm_Package><!-- RPM包名，如ao_xxxx -->
+            <Ao_So>ao_label_follow.so</Ao_So><!-- so名， 如pcbabyservice.so -->
+            <Ao_Service_Name>ao_shopgroup_label_follow</Ao_Service_Name> <!-- manage.sh 中service值-->
+            <Port>61032</Port> <!-- tcp端口 -->
+            <Monitor_File>ao_shopgroup_label_follow.xml</Monitor_File> <!-- 进程监控文件，如ao_tasksys_cms.xml -->
+        </conf>
+</JATS_TWS_Template> 
