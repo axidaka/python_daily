@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+<root>
+  <!--threshold 为报警的阈值ms,时间高于此值的用itilslow告警-->
+  <channel port="unknown_port" itilreq="" itilslow="" itilfull="" threshold="3000" procnum="2"/>
+  <log path="/data/bossapp/logs/unknown_logdir/" level="3" maxsize="20000000" maxnum="10"/>
+</root>
+

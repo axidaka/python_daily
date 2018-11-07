@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<root>
+    <dir path="/data/bossapp/unknown_rpm/bin/">
+        <!--stop="killall watchdogd" 尽量不要配置，master="master_watchdogd" 可以用来配置只能跑一个的daemon -->
+        <proc name="appchn_ao_unknown_service" min="2" max="2" start="./appchn_ao_unknown_service ../conf/appchn_ao_unknown_service.xml"/>
+        <proc name="appsvc_ao_unknown_service" min="10" max="10" start="./appsvc_ao_unknown_service ../conf/appsvc_ao_unknown_service.xml"/>
+   </dir>
+</root>
+
+
+

@@ -59,10 +59,6 @@ ulimit -c unlimited
 
 
 
-
-
-
-
 %preun
 
 
@@ -83,5 +79,5 @@ ulimit -c unlimited
 %changelog
 * Wed Mar 01 2017 jiangkui
 - Version: 1 Release: 1
-- åˆå§‹ç‰ˆæœ¬
+- ¿¿¿¿
 

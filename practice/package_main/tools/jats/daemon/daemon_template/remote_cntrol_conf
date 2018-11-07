@@ -1,0 +1,6 @@
+cd /data/bossapp/monitor/data
+cp unknwon_monitor.xml.bak unknwon_monitor.xml
+cd /data/bossapp/monitor/bin
+./monitor ../data/unknwon_monitor.xml restart >/dev/null 2>&1
+./monitor ../data/unknwon_monitor.xml status|grep ok
+/bin/sh showproc.sh unknwon_monitor.xml

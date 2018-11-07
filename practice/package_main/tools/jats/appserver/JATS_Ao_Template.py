@@ -104,9 +104,9 @@ class AoTemplate(object):
         os.system(shcmd)           
         self._logger.info("[%s] rename unknown_rpm_package ->%s", spec_file, self.Rpm_Package)
 
-        shcmd = "sed -i 's/unknwon_monitor.xml/" + self.Monitor_File + "/g' " + spec_file 
+        shcmd = "sed -i 's/unknwon_monitor.xml/" + self.Monitor_File + "/g' remote_cntrol_conf"  
         os.system(shcmd)           
-        self._logger.info("[%s] rename unknwon_monitor.xml ->%s", spec_file, self.Monitor_File)
+        self._logger.info("[remote_cntrol_conf] rename unknwon_monitor.xml ->%s", self.Monitor_File)
 
         # modify file-----------end-------------------------------------------------------------------------------------------------------
 
@@ -126,10 +126,12 @@ class AoTemplate(object):
 
         bin_path = rpm_path + "bin"
         os.chdir(bin_path)
-        os.rename(r"appchn_ao_unknown_service", "appchn_" + self.Ao_Service_Name)
-        self._logger.info("[%s] rename appchn_ao_unknown_service ->%s", bin_path, "appchn_" + self.Ao_Service_Name)
-        os.rename(r"appsvc_ao_unknown_service", "appsvc_" + self.Ao_Service_Name)
-        self._logger.info("[%s] rename appsvc_ao_unknown_service ->%s", bin_path, "appsvc_" + self.Ao_Service_Name)
+
+        shcmd = "ln -s /data/bossapp/appserver64/bin/appchn.2.0 appchn_" +  self.Ao_Service_Name
+        os.system(shcmd)
+
+        shcmd = "ln -s /data/bossapp/appserver64/bin/appsvc.2.0 appsvc_" +  self.Ao_Service_Name
+        os.system(shcmd)
         
         conf_path = rpm_path + "conf"
         os.chdir(conf_path)

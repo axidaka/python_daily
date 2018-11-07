@@ -2,10 +2,10 @@
 <JATS_Daemon_Template> 
 <!-- 用于创建daemon jat目录 -->
         <conf>
-            <Rpm_Package>daemon_tasksys_tasktimes_sync</Rpm_Package><!-- RPM包名，如daemon_tasksys_tasktimes_sync -->
-            <LogDir_Name>daemon_tasksys_tasktimes_sync</LogDir_Name><!-- 日志目录需要与TLOG->Init初始化路径一直 -->
-            <Executable_file>tasktimes_sync</Executable_file><!-- Makefile编译执行文件名 -->
-            <XmlBak_file>daemon_tasksys_tasktimes_sync.xml.bak</XmlBak_file><!-- monitor/data下监控文件名称， 如daemon_tasksys_tasktimes_retry.xml.bak-->
-            <Proc_Num>5</Proc_Num><!--daemon进程个数 -->
+            <Rpm_Package>daemon_label_cache_async</Rpm_Package><!-- RPM包名，如daemon_tasksys_tasktimes_sync -->
+            <LogDir_Name>daemon_label_cache_async</LogDir_Name><!-- 日志目录需要与TLOG->Init初始化路径一直 -->
+            <Executable_file>daemon_label_cache_async</Executable_file><!-- Makefile编译执行文件名 -->
+            <Monitor_File>daemon_label_cache_async.xml</Monitor_File><!-- monitor/data下监控文件名称， 如daemon_tasksys_tasktimes_retry.xml-->
+            <Proc_Num>10</Proc_Num><!--daemon进程个数 -->
         </conf>
 </JATS_Daemon_Template> 

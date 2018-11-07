@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf8"?>
+<root>
+	<log path="/data/bossapp/logs/unknown_logdir/" level="3" maxsize="20000000" maxnum="10"/>
+	<app qkey="0xff0unknown_port" qtype="0" procnum="10" path="../plugin/" maxqtime="1000" itiltimeout="">
+	<so name="unknown.so">
+		<cmd id="0x0B180001" itilreq="" itilresp="" itilerr="" itilslow=""/>
+		<cmd id="0x0B180002" itilreq="" itilresp="" itilerr="" itilslow=""/>
+		<cmd id="0x0B180003" itilreq="" itilresp="" itilerr="" itilslow=""/>
+		<cmd id="0x0B180004" itilreq="" itilresp="" itilerr="" itilslow=""/>
+		<cmd id="0x0B180011" itilreq="" itilresp="" itilerr="" itilslow=""/>
+	</so>
+	</app>
+</root>
+
